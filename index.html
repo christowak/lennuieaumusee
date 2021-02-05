@@ -10,12 +10,16 @@
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play L&#39;ennuie au Musée.</tw-noscript></noscript></tw-story>
 <tw-storydata name="L&#39;ennuie au Musée" startnode="1" creator="Twine" creator-version="2.3.12" ifid="6DE839F0-EDFC-458B-A99C-0BCDC4844157" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">* {
-	outline: none!important;
+    outline: none!important;
 }
-
 tw-sidebar {
     display: none;
 }
+
+
+import url(https://fonts.googleapis.com/css2?family=Cinzel&display=swap);
+
+
 
 .visited {
     color: #636363;
@@ -26,49 +30,72 @@ tw-sidebar {
 }
 
 .tableau {
-  	width: 500px;
-  	padding-top: 16px;
-  	padding-bottom: 6px;
+      width: 500px;
+      padding-top: 16px;
+      padding-bottom: 6px;
 }
 
 .tableau:hover {
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  	filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
 }
 
 tw-story {
-	background: url(https://static.wixstatic.com/media/a0717a_e3a9e35921004ad891a7e9a56a34aa7d~mv2.png) no-repeat center center fixed; 
+    background: url(https://static.wixstatic.com/media/a0717a_e3a9e35921004ad891a7e9a56a34aa7d~mv2.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  	font: 200% Cinzel, serif;
-  	text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.5);
-  	margin-left: auto;
-    margin-right: auto;
+      font: 200% Cinzel, serif;
+      text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.5);
+      text-align: center
 }
 
 tw-link {
-	background: linear-gradient(327.43deg, #534945 -77.68%, #292524 87.35%);
-	box-shadow: -4px -2px 16px rgba(195, 200, 205, 0.05), 4px 4px 18px rgba(0, 0, 0, 0.4);
-  	color: white;
-	border-radius: 12px;
-  	padding: 15px 32px;
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
-  	font-size: 25px;
-  	margin-bottom: 2rem;
-  	font-weight: normal;
+    background: linear-gradient(327.43deg, #534945 -77.68%, #292524 87.35%);
+    box-shadow: -4px -2px 16px rgba(195, 200, 205, 0.05), 4px 4px 18px rgba(0, 0, 0, 0.4);
+      color: white;
+    border-radius: 12px;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+      margin-bottom: 2rem;
+      font-weight: normal;
 }
 
 tw-link:hover {
-	background: linear-gradient(312deg, #38322F -75.57%, #1C1E22 59.28%);
-	box-shadow: inset -2px -2px 12px rgba(255, 255, 255, 0.06), inset 2px 3px 16px rgba(7, 7, 9, 0.8);
-  	color: white;
-  	text-decoration: none;
+    background: linear-gradient(312deg, #38322F -75.57%, #1C1E22 59.28%);
+    box-shadow: inset -2px -2px 12px rgba(255, 255, 255, 0.06), inset 2px 3px 16px rgba(7, 7, 9, 0.8);
+      color: white;
+      text-decoration: none;
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="L&#39;ennuie au musée" tags="" position="409,186" size="100,100">[(link: &#39;&lt;img src=&quot;https://static.wixstatic.com/media/a0717a_7d8f73c25f6e444d865e6bc6c5bfd08d~mv2.png&quot; class=&quot;tableau&quot;&gt;&#39;)[(goto:&quot;Commencer&quot;)]
+
+.file{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    letter-spacing: 0.01em;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity .4s;
+    z-index: 2;
+
+    &:hover{
+      opacity: .8;
+    }
+  }
+
+  canvas{
+    vertical-align: bottom;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="L&#39;ennuie au musée" tags="" position="409,186" size="100,100">[(link: &#39;&lt;img src=&quot;https://static.wixstatic.com/media/a0717a_7d8f73c25f6e444d865e6bc6c5bfd08d~mv2.png&quot; class=&quot;tableau&quot;&gt;&#39;)[(goto:&quot;Commencer&quot;)]
 ]</tw-passagedata><tw-passagedata pid="2" name="Commencer" tags="" position="409,336" size="100,100">Le musée des beaux arts. Quel ennui. On vous y a traîné de force, et vous regrettez déjà d’avoir cédé. Que des tableaux, partout. Ils n’ont même pas l’air intéressants, ni de près, ni de loin. Vous décidez finalement de vous approcher d’un tableau : Ulysse et Néoptolème enlevant à Philoctète les flèches d&#39;Hercule. Effectivement, même d’aussi près, l’écriteau devant la toile qui vous interdit de toucher paraît plus intéressant...
 
 
